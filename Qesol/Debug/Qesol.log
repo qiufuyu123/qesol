@@ -1,0 +1,4 @@
+﻿  lexer.c
+D:\qiufuyu\a\Qesol\Qesol\lexer.c(32): warning C4716: “WIsSplit”: 必须返回一个值
+D:\qiufuyu\a\Qesol\Qesol\lexer.c(37): warning C4716: “IsKeyWords”: 必须返回一个值
+  Qesol.vcxproj -> D:\qiufuyu\a\Qesol\Debug\Qesol.exe
