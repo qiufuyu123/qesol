@@ -2,6 +2,8 @@
 #include<string.h>
 typedef struct
 {
+	int row;
+	int line;
 	int type;
 	char* value;
 }QToken;

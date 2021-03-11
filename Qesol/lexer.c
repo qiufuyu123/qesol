@@ -57,7 +57,7 @@ bool IsNumber(char* c)
 	}
 	return true;
 }
-QToken* MakeToken(int type, char* value)
+QToken* MakeToken(int type, char* value, int row, int line)
 {
 	QToken* re = malloc(sizeof(QToken));
 	if (re == NULL)
@@ -65,6 +65,8 @@ QToken* MakeToken(int type, char* value)
 	re->value = malloc(sizeof(value));
 	strcpy(re->value, value);
 	re->type = type;
+	re->line = line;
+	re->row = row;
 	return re;
 }
 void AddToken(QToken* t, QTokenList* tl)
@@ -100,13 +102,13 @@ QLexerErr* QLexerMake(char* txt, QTokenList* tk)
 		if (WIsSymbol(*codes) || cout == strl - 1)
 		{
 			if (IsNumber(now_str) && strcmp(now_str, "") != 0)
-				AddToken(MakeToken(TT_NUM, now_str), tk);
+				AddToken(MakeToken(TT_NUM, now_str, crow, cline), tk);
 			if (WIsSymbol(*codes))
 			{
 				char ls[2] = "??";
 				ls[0] = *codes;
 				ls[1] = '\0';
-				AddToken(MakeToken(TT_SYMBOL, ls), tk);
+				AddToken(MakeToken(TT_SYMBOL, ls, crow, cline), tk);
 			}
 			memset(now_str, '\0', sizeof(now_str));
 		}

@@ -1,6 +1,6 @@
 ﻿// Qesol.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
-#include"lexel.h"
+#include"compile.h"
 #include<malloc.h>
 #include<stdio.h>
 int main()
@@ -22,6 +22,9 @@ int main()
 		{
 			printf("[type:%d,value:%s]\n", tl.tlist[i].type, tl.tlist[i].value);
 		}
+		printf("start to compile!\n");
+		QInitCompile(&tl);
+		QMakeCompile();
 	}
 	return 1;
 }

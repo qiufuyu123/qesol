@@ -21,6 +21,9 @@
     <ClCompile Include="lexer.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="compile.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lexel.h">

@@ -1,4 +1,5 @@
-﻿  lexer.c
-D:\qiufuyu\a\Qesol\Qesol\lexer.c(32): warning C4716: “WIsSplit”: 必须返回一个值
-D:\qiufuyu\a\Qesol\Qesol\lexer.c(37): warning C4716: “IsKeyWords”: 必须返回一个值
+﻿  compile.c
+D:\qiufuyu\a\Qesol\Qesol\compile.c(92): warning C4715: “calc_calc”: 不是所有的控件路径都返回值
+D:\qiufuyu\a\Qesol\Qesol\compile.c(42): warning C4716: “makeErr”: 必须返回一个值
+D:\qiufuyu\a\Qesol\Qesol\compile.c(169): warning C4715: “calc_factor”: 不是所有的控件路径都返回值
   Qesol.vcxproj -> D:\qiufuyu\a\Qesol\Debug\Qesol.exe
